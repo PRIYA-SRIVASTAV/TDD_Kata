@@ -26,4 +26,7 @@ void main() {
     expect(add('//|\n4|5|6'), 15);
   });
 
+  test('Negative numbers throw exception', () {
+    expect(() => add('1,-2,3,-4'), throwsA(predicate((e) => e.toString().contains('negative numbers not allowed -2,-4'))));
+  });
 }
