@@ -12,4 +12,8 @@ void main() {
     expect(add('5'), 5);
   });
 
+  test('Two numbers, comma separated', () {
+    expect(add('1,5'), 6);
+  });
+
 }
