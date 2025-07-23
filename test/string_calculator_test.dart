@@ -16,4 +16,9 @@ void main() {
     expect(add('1,5'), 6);
   });
 
+  test('Multiple numbers and newlines', () {
+    expect(add('1,2,3'), 6);
+    expect(add('1\n2,3'), 6);
+  });
+
 }
