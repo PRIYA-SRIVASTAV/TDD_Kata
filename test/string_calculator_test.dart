@@ -8,4 +8,8 @@ void main() {
     expect(add(''), 0);
   });
 
+  test('Single number returns its value', () {
+    expect(add('5'), 5);
+  });
+
 }
